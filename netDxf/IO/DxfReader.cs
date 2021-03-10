@@ -2683,7 +2683,7 @@ namespace netDxf.IO
             }
 
             // if it exists read the information stored in the extended data about the font family and font style, only applicable to true type fonts
-            string fontFamily = string.Empty;
+            string fontFamily =  netDxf.Tables.TextStyle.DefaultName;
             FontStyle fontStyle = FontStyle.Regular;
             if (xDataFont != null)
             {
